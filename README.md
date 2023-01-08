@@ -18,7 +18,7 @@ composer require etsvthor/telegram-failed-job-monitor
 You must publish the config file:
 
 ```bash
-php artisan vendor:publish --tag=failed-job-monitor-config
+php artisan vendor:publish --tag=telegram-failed-job-monitor-config
 ```
 
 This is the contents of the published config file. By default, the `notificationFilter` is used to create to rate-limit:
