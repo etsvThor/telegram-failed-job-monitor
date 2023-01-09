@@ -5,7 +5,7 @@
 Extension to [spatie/laravel-failed-job-monitor](/https://github.com/spatie/laravel-failed-job-monitor) to add support for Telegram notifications and add a rate-limiter to not
 get spammed in case certain jobs run regularly.
 
-See [spatie/laravel-failed-job-monitor](/https://github.com/spatie/laravel-failed-job-monitor) and [laravel-notification-channels/telegram](\https://github.com/laravel-notification-channels/telegram/tree/master/src) for more information.
+See [spatie/laravel-failed-job-monitor](/https://github.com/spatie/laravel-failed-job-monitor) and [laravel-notification-channels/telegram](https://github.com/laravel-notification-channels/telegram/tree/master/src) for more information.
 
 ## Installation
 
@@ -18,10 +18,10 @@ composer require etsvthor/telegram-failed-job-monitor
 You must publish the config file:
 
 ```bash
-php artisan vendor:publish --tag=telegram-failed-job-monitor-config
+php artisan vendor:publish --tag=telegram-failed-job-monitor
 ```
 
-This is the contents of the published config file. By default, the `notificationFilter` is used to create to rate-limit:
+This is the contents of the published config file. This overwrites the config of spatie/laravel-failed-job-monitor. By default, the `notificationFilter` is used to create the rate-limit:
 
 ```php
 return [

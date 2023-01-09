@@ -9,9 +9,9 @@ class Notifiable extends SpatieNotifiable
     /**
      * Route notifications for the Telegram channel.
      *
-     * @return int
+     * @return ?int
      */
-    public function routeNotificationForTelegram(): int
+    public function routeNotificationForTelegram(): ?int
     {
         return config('services.telegram-bot-api.chat_id');
     }

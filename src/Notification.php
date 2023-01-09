@@ -19,7 +19,7 @@ class Notification extends SpatieNotification
         return TelegramMessage::create()
             ->line('A job failed at '.config('app.name').' at '.config('app.url'))
             ->line("Job class: {$this->event->job->resolveName()}")
-            ->line((config('app.url') ?: config('horizon.domain')).'/'.config('horizon.path').'/failed/'.
+            ->line((config('horizon.domain') ?: config('app.url')).'/'.config('horizon.path').'/failed/'.
                 $this->event->job->getJobId());
     }
 
