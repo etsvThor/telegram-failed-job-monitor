@@ -13,6 +13,6 @@ class Notifiable extends SpatieNotifiable
      */
     public function routeNotificationForTelegram(): ?int
     {
-        return config('services.telegram-bot-api.chat_id);
+        return config('services.telegram-bot-api.chat_id');
     }
 }
