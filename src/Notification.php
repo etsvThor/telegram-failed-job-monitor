@@ -10,9 +10,6 @@ class Notification extends SpatieNotification
 {
     /**
      * Get the mail representation of the notification.
-     *
-     * @param mixed $notifiable
-     * @return TelegramMessage
      */
     public function toTelegram(mixed $notifiable): TelegramMessage
     {
@@ -25,8 +22,6 @@ class Notification extends SpatieNotification
 
     /**
      * Rate limits notifications for certain jobs
-     * @param Notification $notification
-     * @return bool
      */
     public static function notificationFilter(Notification $notification): bool
     {
