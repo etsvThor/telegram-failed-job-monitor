@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.0 - 2023-10-9
+- Dropped support for php8.0
+- Added support for Laravel 10
+
 ## 0.1.1 - 2022-01-09
 - Update readme
 - Fix horizon domain not being used
