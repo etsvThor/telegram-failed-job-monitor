@@ -8,8 +8,6 @@ class TelegramFailedJobMonitorServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
-     *
-     * @return void
      */
     public function boot(): void
     {
@@ -29,8 +27,6 @@ class TelegramFailedJobMonitorServiceProvider extends ServiceProvider
 
     /**
      * Console-specific booting.
-     *
-     * @return void
      */
     protected function bootForConsole(): void
     {

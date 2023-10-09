@@ -8,8 +8,6 @@ class Notifiable extends SpatieNotifiable
 {
     /**
      * Route notifications for the Telegram channel.
-     *
-     * @return ?int
      */
     public function routeNotificationForTelegram(): ?int
     {
